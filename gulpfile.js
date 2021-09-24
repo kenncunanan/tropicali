@@ -50,6 +50,7 @@ gulp.task("watch", function() {
             baseDir: "dist"
         }
     })
+    
     gulp.watch("src/*.html", gulp.series("html")).on("change", browserSync.reload)
     gulp.watch("src/css/app.scss", gulp.series("sass"))
     gulp.watch("src/fonts/*", gulp.series("fonts"))
